@@ -42,18 +42,18 @@ I then exited and saved the nano .config edits, back to the comnmand promt i ran
 
 On the browser GUI it prompted me to setup a GUI authentication username and password, which I did.
 
-I then installed [Syncthing's Windows app](https://syncthing.net/downloads/) to add a computer to the Syncthing file sharing network. Once I had installed it 2 new icons appear in the start menu, one for start and one for stop. I clicked start and it automattically opens the Desktop IP GUI on the web browser because im still on the local network.
+I then installed [Syncthing's Windows app](https://syncthing.net/downloads/) to add a computer to the Syncthing file sharing network. Once I had installed it two new icons appear in the start menu, one for start and one for stop. I clicked start and it automattically opens the Desktop IP GUI on the web browser because im still on the local network.
 
 ---
 ## Setting up and connecting 
 
-On the new tab that opened I clicked add remote device, it then asks for a device ID. So I went back into the Raspberry Pi browser tab, went to Actions > Show ID, then at the top there was a long string of characters or a QR code so I copied the ID and pasted it back into the Desktop tab. Then under sharing I checked the box which said Introducer which means it can share folders with the Desktop. When going back onto the Pi there was a request for the new device to connect, making sure it was my desktop I clicked  '+ Add Device'.
+On the new tab that opened, I clicked Add Remote Device. It then asked for a device ID, so I went back into the Raspberry Pi browser tab, navigated to Actions > Show ID, and saw a long string of characters or a QR code at the top. I copied the ID and pasted it into the Desktop tab. Under Sharing, I checked the box labeled Introducer, which allows it to share folders with the Desktop. When I returned to the Pi, there was a request for the new device to connect. After confirming it was my desktop, I clicked + Add Device.
 
-Before adding any data, I made sure everything was secure by going to Actions > Settings > Connections and disabled NAT transversal and Global discovery on both Desktop and Pi, so only local people could connect to it. For the changes to take place I restarted Syncthing on both sides.
+Before adding any data, I ensured everything was secure by going to Actions > Settings > Connections and disabling NAT Traversal and Global Discovery on both the Desktop and the Pi, so only local devices could connect. For the changes to take effect, I restarted Syncthing on both sides.
 
-I created a new folder called Shared Code, and in the settings check the box which says 'Share with Desktop'. Under advanced I changed the full scan interval to every 1 hour rather than the defualt 30 minutes and clicked save.
+I then created a new folder called Shared Code, and in its settings checked the box labeled Share with Desktop. Under Advanced, I changed the full scan interval to every 1 hour instead of the default 30 minutes, and clicked Save.
 
-Back on the desktop tab there was a request which said 'Pi wants to share a folder with desktop', I clicked 'Add' and under folder path put the shared code folder under my pre-existing code folder on my computer.
+Back on the Desktop tab, I saw a request stating "Pi wants to share a folder with Desktop." I clicked Add and, under Folder Path, set the Shared Code folder to be inside my existing Code folder on my computer.
 
 ---
 
@@ -68,9 +68,9 @@ For syncthing to open when the Pi comes online I had to enable the syncthing ser
 
 ---
 
-## Pycharm
+## PyCharm
 
-To install the IDE [Pycharm](https://www.jetbrains.com/pycharm/) I went to the [Downloads](https://www.jetbrains.com/pycharm/download/?section=linux) page on their website, and selected linux as Pi OS is a debian based Linux distribution. Once I had downloaded the the .tar.gz file, I extracted it and then executed the `Pycharm.sh` file. To make it so I dont have to go to the file everytime I want to use Pycharm, when it opened I clicked in the bottom left create desktop shortcut, which added it to the programming section in my Pi.
+To install the IDE [PyCharm](https://www.jetbrains.com/pycharm/) I went to the [Downloads](https://www.jetbrains.com/pycharm/download/?section=linux) page on their website and selected Linux, as Pi OS is a Debian-based Linux distribution. Once I had downloaded the `.tar.gz` file, I extracted it and executed the `pycharm.sh` file. To avoid having to navigate to the file every time I wanted to use PyCharm, I created a desktop shortcut by clicking the option in the bottom left when PyCharm opened. This added it to the Programming section on my Pi.
 
 
 
@@ -84,3 +84,15 @@ To install the IDE [Pycharm](https://www.jetbrains.com/pycharm/) I went to the [
 
 <img width="520" height="236" alt="image" src="https://github.com/user-attachments/assets/83fa4915-3865-4f7a-8677-11e71ee50108" />
 
+---
+
+I am now able to remotely connect to my Pi from anywhere in the world via Pi Connect (as it runs through Raspberry Pi's servers and does not require port forwarding) while syncing files.
+
+---
+## Final Thoughts / What I Learned
+I gained valuable skills in working with Raspberry Pi hardware and Linux-based operating systems, including remote access and network configuration. Additionally, I deepened my understanding of data privacy and encryption in practical applications. This project enhanced my ability to design and implement effective, low-cost tech solutions to real-world problems. It was also a rewarding experience that not only solved a personal challenge but also expanded my technical skill set.
+
+##  Thanks for Reading
+
+Thanks for checking out my Self-hosted file sync project.
+If you'd like to connect or ask questions, you can reach me via [LinkedIn](https://www.linkedin.com/in/ethan-a-a95b14324/)
