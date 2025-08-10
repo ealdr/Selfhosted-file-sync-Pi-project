@@ -55,9 +55,32 @@ I created a new folder called Shared Code, and in the settings check the box whi
 
 Back on the desktop tab there was a request which said 'Pi wants to share a folder with desktop', I clicked 'Add' and under folder path put the shared code folder under my pre-existing code folder on my computer.
 
---
+---
+
 ## Testing 
 
 On my desktop I added a .txt document called 'test' to the 'Shared Code' folder in file explorer, and then forced a rescan on the GUI. Went back to my raspberry Pi screen sharing on Pi connect opened the folder and it had successfully worked.
 
+<img width="200.5" height="100.5" alt="image" src="https://github.com/user-attachments/assets/d84f88c1-b6cd-4301-9a9b-4625868c4ff5" />
+
+
 For syncthing to open when the Pi comes online I had to enable the syncthing service, by running `sudo systemctl enable syncthing@pi.service`. I then rebooted the Pi, went to the web browser GUI to see that syncthing started up on its own after the restart.
+
+---
+
+## Pycharm
+
+To install the IDE [Pycharm](https://www.jetbrains.com/pycharm/) I went to the [Downloads](https://www.jetbrains.com/pycharm/download/?section=linux) page on their website, and selected linux as Pi OS is a debian based Linux distribution. Once I had downloaded the the .tar.gz file, I extracted it and then executed the `Pycharm.sh` file. To make it so I dont have to go to the file everytime I want to use Pycharm, when it opened I clicked in the bottom left create desktop shortcut, which added it to the programming section in my Pi.
+
+
+
+
+
+
+
+
+
+
+
+<img width="520" height="236" alt="image" src="https://github.com/user-attachments/assets/83fa4915-3865-4f7a-8677-11e71ee50108" />
+
